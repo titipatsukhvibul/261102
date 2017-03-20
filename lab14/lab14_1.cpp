@@ -19,10 +19,12 @@ int main() {
   rect rectA;
   rect rectB;
 
+  cout << "Input first rectangle x y w h:";
   cin >> rectA.x >> rectA.y >> rectA.w >> rectA.h;
+  cout << "Input second rectangle x y w h:";
   cin >> rectB.x >> rectB.y >> rectB.w >> rectB.h;
 
   double overlapArea = overlap(rectA, rectB);
 
-  cout << overlapArea << endl;
+  cout << "Overlap area: " << overlapArea << endl;
 }
